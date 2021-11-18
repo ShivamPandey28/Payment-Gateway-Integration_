@@ -1,0 +1,169 @@
+<!-- HOME PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image:linear-gradient(rgba(30,40,50,0.5),rgba(20,30,50,0.5)), url("img.jpg");
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+
+}
+.header {
+  padding: 20px;
+  text-align: center;
+  /* background: #1abc9c; */
+  color: rgb(255, 0, 0);
+}
+.header h1 {
+    padding-top: 26px;
+  font-size: 40px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: rgb(255, 25, 255);
+  opacity: 0.5;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(14, 13, 13);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a.right {
+  float: right;
+}
+.navbar a:hover {
+  background-color: rgb(20, 38, 38);
+  color: black;
+}
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(10, 10, 110);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #30ac6e;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,90,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(248, 230, 50);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.side {
+  -ms-flex: 30%;
+  flex: 30%;
+  /* background-color: #f1f1f1; */
+  padding: 20px;
+  color:rgb(255, 255, 255);
+}
+.main {
+  -ms-flex: 70%;
+  flex: 70%;
+  /* background-color: white; */
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.footer {
+  padding: 6px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 10%;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Student Data House</h1>
+</div>
+<div class="navbar">
+  <a href="about.html" class="right"><strong>CONTACT US</strong></a>
+  <a href="form.html" class="right"><strong>Login</strong></a>
+  </div>
+<div class="row">
+  <div class="side">
+    <h2 style="font-style:inherit; color: rgb(178, 2, 248);">Online Attendance</h2>
+    <center><h1 style="color:rgb(255, 0, 0);"><i></i></h1></center>
+    <br>
+    <p style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;"><strong>
+      Stay Safe, Stay At Your Home</strong></p>
+    <br>
+    <br>
+    <p><strong>Note :</strong></p>
+    <p style="font-size:20px">>> The motivation of this project is to  eradicate the usage of traditional register that are  hard to maintain.Instead  we are trying to provide a more versatile and  an online E-register to maintain   student  record.
+    <p style="font-size:20px">>> Taking attendance of small group of students is ok but when it comes to take attendance of students in a university or institution it becomes a tedious job for faculties to do so. </p>
+    <p style="font-size:20px">>> Online Attendance System is a smart system that uses technology such as Smartphone, database and internet to mark attendance and stores its data in a excel sheet and send it to respective faculty. </p>
+    <p style="font-size:20px">>>An attempt is made to look at the prevalence in the high level of impersonation experienced on a daily basis in both private and public sectors, the ghost worker syndrome which has become a menace across all tiers of government, employers concerns over the levels of absence in their workforce and difficulty in managing student attendance during lecture periods. </p></p>    <!-- <p>>> Please feel free to reach out to us to know more ☻</p> -->
+
+  </div>
+</div>
+
+<div>
+  <center><button type="button"><a href="payment.html">Login</a></button></center>
+</div>
+
+<div class="footer">
+  <h2>Student Data House</h2>
+  <p style="font-size: medium;">Mentor Jyoti maam</p>
+</div>
+</body>
+</html>
